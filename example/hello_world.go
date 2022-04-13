@@ -34,8 +34,7 @@ func main() {
 
 	// 1. new pm obj；后续作为参数
 	// 1.1 new string, 作为pm的参数
-	config, err := env.NewObject("java/lang/String", []byte("/Users/oliver/Desktop/"+
-		""))
+	config, err := env.NewObject("java/lang/String", []byte("/Users/oliver/Desktop/mqtt-daemon.properties"))
 	pm, err := env.NewObject("com/lenovo/lrec/cloud/utils/properties/PropertiesManager", config)
 
 	// 2. new string参数；后续作为参数；
