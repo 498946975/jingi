@@ -26,9 +26,9 @@ func AttemptToFindJVMLibPath() string {
 	if runtime.GOOS == "windows" {
 		dirPath = filepath.Join(dirPath, "bin", "server")
 	} else if runtime.GOOS == "darwin" {
-		dirPath = filepath.Join(dirPath, "lib", "server")
+		dirPath = filepath.Join(dirPath, "jre/lib", "server")
 	} else {
-		dirPath = filepath.Join(dirPath, "lib", "server")
+		dirPath = filepath.Join(dirPath, "jre/lib/amd64", "server")
 	}
 
 	var libPath string
