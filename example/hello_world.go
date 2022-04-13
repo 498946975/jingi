@@ -23,10 +23,10 @@ func main() {
 		//[]string{"-Djava.class.path=/Users/oliver/Documents/Lenovo/common-utils"}))  // pm
 		//[]string{"-Xcheck:jni"}))
 		//[]string{"-Xbootclasspath/a:/Users/oliver/Documents/Lenovo/jar/mqtt-daemon.jar"}))
-		[]string{"-Xbootclasspath/a:/Users/oliver/Documents/Lenovo/mqtt-daemon:" +
-			"/Users/oliver/Documents/Lenovo/mqtt-daemon-extender:" +
-			"/Users/oliver/Documents/Lenovo/common-utils-1.0.0:" +
-			"/Users/oliver/Documents/Lenovo/common-utils"}))
+		[]string{"-Xbootclasspath/a:/Users/oliver/Documents/Lenovo/mqtt-daemon.jar:" +
+			"/Users/oliver/Documents/Lenovo/mqtt-daemon-extender.jar:" +
+			"/Users/oliver/Documents/Lenovo/common-utils-1.0.0.jar:" +
+			"/Users/oliver/Documents/Lenovo/common-utils.jar"}))
 	if err != nil {
 		log.Fatal(err)
 	}
